@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+int n,i,r,it;
+vector<int>v;
+ 	cin>>n;
+	while(n>0)
+	{  r=n%10;
+	    v.push_back(r);
+	    n=n/10;
+	}
+	for(i=9;i>=0;i--)
+		{
+	  auto it= find(v.begin(),v.end(),i);
+	    if(it==v.end())
+	     cout<<i;
+	}
+	return 0;
+}
